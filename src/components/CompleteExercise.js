@@ -54,7 +54,7 @@ function Excercises(props) {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-    .get("http://localhost:5000/api/completedExcercise",  {
+    .get("https://project-server-mernmonks.herokuapp.com/api/completedExcercise",  {
       headers: {
         'x-auth-token': tokenContext.token
       }

@@ -64,7 +64,7 @@ export default function Register() {
         setTimeout(() => {
           // Below to test how values being passed
           // alert(JSON.stringify(values, null, 2));
-          axios.post('http://localhost:5000/api/users', values)
+          axios.post('https://project-server-mernmonks.herokuapp.com/api/users', values)
           .then(function (response) {
             console.log(response);
           })

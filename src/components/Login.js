@@ -67,7 +67,7 @@ export default function Login(props) {
         <Formik onSubmit={(values) => {  
           // Below to test how values being passed
           // alert(JSON.stringify(values, null, 2));
-          axios.post('http://localhost:5000/api/auth', values)
+          axios.post('https://project-server-mernmonks.herokuapp.com/api/auth', values)
           .then((response) => {
             console.log(response);
             let { token } = response.data;

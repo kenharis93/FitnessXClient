@@ -42,7 +42,7 @@ function Excercises(props) {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-    .get("http://localhost:5000/api/excercises")
+    .get("https://project-server-mernmonks.herokuapp.com/api/excercises")
     .then(result => setData(result.data));
   }, []);
   if (!tokenContext.token) {
